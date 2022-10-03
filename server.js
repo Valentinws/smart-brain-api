@@ -184,6 +184,8 @@ app.put('/image', (req, res) => {
             res.json(entries[0].entries);
         })
         .catch(err => res.status(400).json('unable to get entries'))
+
+
 })
 
 app.listen(3000, () => {
